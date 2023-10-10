@@ -1,0 +1,6 @@
+{
+	"type": "module",
+	"dependencies": {
+		"bottleneck": "^2.19.5"
+	}
+}
