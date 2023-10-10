@@ -27,4 +27,4 @@ async function * fetchMedia (page = 0) {
   }
 }
 
-await pipeToFile(fetchMedia(), './media.json')
+export default () => pipeToFile(fetchMedia(), './media.json')

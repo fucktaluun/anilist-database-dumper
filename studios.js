@@ -42,4 +42,4 @@ async function * fetchStudios (page = 0) {
   }
 }
 
-await pipeToFile(fetchStudios(), './studios.json')
+export default () => pipeToFile(fetchStudios(), './studios.json')

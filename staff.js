@@ -37,4 +37,4 @@ async function * fetchStaff (page = 0) {
   }
 }
 
-await pipeToFile(fetchStaff(), './staff.json')
+export default () => pipeToFile(fetchStaff(), './staff.json')

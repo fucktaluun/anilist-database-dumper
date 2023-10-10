@@ -42,4 +42,4 @@ async function * fetchCharacters (page = 0) {
   }
 }
 
-await pipeToFile(fetchCharacters(), './characters.json')
+export default () => pipeToFile(fetchCharacters(), './characters.json')
